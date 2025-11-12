@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "name": "None",
+    "description": "Can't play it in this platform",
+    "launchCommand": "",
+    "launchParams": ""
+  },
+  {
+    "id": 1,
+    "name": "Shortcut",
+    "description": "Regular PC Shortcuts",
+    "launchCommand": "<path>",
+    "launchParams": ""
+  },
+  {
+    "id": 2,
+    "name": "Cloud",
+    "description": "Edge PWA for Xbox Cloud",
+    "launchCommand": "msedge.exe",
+    "launchParams": "--profile-directory=Default --start-fullscreen <path> --edge-kiosk-type=fullscreen"
+  }
+]

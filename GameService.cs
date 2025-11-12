@@ -10,10 +10,6 @@ namespace GameLauncher.Services
 {
     public class GameService
     {
-        // Fallback original dev paths (kept for backward compatibility)
-        private const string FallbackGamesFilePath = @"G:\My Drive\#99_Otros documentos\GamesLauncher\games.json";
-        private const string FallbackEnvironmentsFilePath = @"G:\My Drive\#99_Otros documentos\GamesLauncher\environments.json";
-        private const string FallbackLaunchTypesFilePath = @"G:\My Drive\#99_Otros documentos\GamesLauncher\launchTypes.json";
 
         public List<Game> Games { get; private set; } = new();
         public List<LaunchEnvironment> Environments { get; private set; } = new();
@@ -21,9 +17,9 @@ namespace GameLauncher.Services
 
         public async Task LoadAllAsync()
         {
-            var gamesPath = FallbackGamesFilePath;
-            var envPath = FallbackEnvironmentsFilePath;
-            var typesPath = FallbackLaunchTypesFilePath;
+            var gamesPath = AppPaths.GamesJsonPath;
+            var envPath = AppPaths.EnvironmentsJsonPath;
+            var typesPath = AppPaths.LaunchTypesJsonPath;
 
             Debug.WriteLine($"[GameService] Loading games from: {gamesPath}");
             Debug.WriteLine($"[GameService] Loading environments from: {envPath}");
@@ -45,24 +41,9 @@ namespace GameLauncher.Services
 
         public async Task SaveGamesAsync()
         {
-            var gamesPath = FallbackGamesFilePath;
+            var gamesPath = AppPaths.GamesJsonPath;
             // Ensure the service list is written as-is to disk.
             await JsonRepository.SaveAsync<Game>(gamesPath, Games);
-        }
-
-        private static string ResolvePath(string filename, string fallback)
-        {
-            var baseDir = AppContext.BaseDirectory ?? AppDomain.CurrentDomain.BaseDirectory;
-            var candidates = new[]
-            {
-                Path.Combine(baseDir, filename),
-                Path.Combine(baseDir, "Data", filename),
-                Path.Combine(Directory.GetCurrentDirectory(), filename),
-                fallback
-            };
-
-            var found = candidates.FirstOrDefault(File.Exists);
-            return found ?? candidates[0]; // if none exists, return primary location (app base) so Save will write there
         }
     }
 }

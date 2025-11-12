@@ -1,0 +1,162 @@
+[
+  {
+    "Id": "d7dd57ab-5c42-48a7-89fd-c52cc43e88a3",
+    "Title": "AC 2: The Ezio Collection",
+    "Subtitle": "El de xbox",
+    "Order": 0,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "2",
+        "Path": "https://www.xbox.com/es-ES/play/games/assassin\u0027s-creed-the-ezio-collection/BQ9S8ZKCT3Q7"
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "2",
+        "Path": "https://www.xbox.com/es-ES/play/games/assassin\u0027s-creed-the-ezio-collection/BQ9S8ZKCT3Q7"
+      }
+    ]
+  },
+  {
+    "Id": "3a00b210-a966-4873-a17d-a83d85b10cb5",
+    "Title": "The Division 2",
+    "Subtitle": "",
+    "Order": 1,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "0",
+        "Path": ""
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  },
+  {
+    "Id": "e72f4c6b-bbe8-45d8-bc00-93b063c763db",
+    "Title": "Halo: Master Chief Collection",
+    "Subtitle": "",
+    "Order": 2,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "0",
+        "Path": ""
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  },
+  {
+    "Id": "d21a7b64-798d-4b85-83cb-d269ffc4634d",
+    "Title": "Spider-Man",
+    "Subtitle": "",
+    "Order": 3,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "0",
+        "Path": ""
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  },
+  {
+    "Id": "1d4b8af3-66b3-4634-b025-9eaa687e74de",
+    "Title": "Ghost of Tsushima",
+    "Subtitle": "",
+    "Order": 4,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "0",
+        "Path": ""
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  },
+  {
+    "Id": "d10f2537-8af0-4b9a-9e83-3ac9f657dbb7",
+    "Title": "Elden Ring",
+    "Subtitle": "",
+    "Order": 5,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "0",
+        "Path": ""
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  },
+  {
+    "Id": "9c23d5f9-0024-4103-b2a8-04d6fac0e69a",
+    "Title": "The Witcher 3",
+    "Subtitle": "",
+    "Order": 6,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "0",
+        "Path": ""
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  },
+  {
+    "Id": "495770c0-88bb-4cea-8d32-7b72281c027d",
+    "Title": "Red Dead Redemption 2",
+    "Subtitle": "",
+    "Order": 7,
+    "Visible": true,
+    "BgColor": "#000000",
+    "LaunchEnvironments": [
+      {
+        "EnvId": "aero",
+        "LaunchType": "1",
+        "Path": "C:\\Users\\Alonso\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Red Dead Redemption 2.url"
+      },
+      {
+        "EnvId": "ally",
+        "LaunchType": "0",
+        "Path": ""
+      }
+    ]
+  }
+]

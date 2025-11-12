@@ -93,6 +93,7 @@
                          BorderThickness="0"
                          DragOver="GamesList_DragOver"
                          Drop="GamesList_Drop"
+                         MouseDoubleClick="GamesList_MouseDoubleClick"
                          Background="Transparent"
                          Padding="8">
 

@@ -10,13 +10,13 @@ namespace GameLauncher.Views
 {
     public partial class AddGamesDialog : Window
     {
-        private readonly string _gamesPath;
+        private readonly string _gamesPath = AppPaths.GamesJsonPath;
 
         public AddGamesDialog()
         {
             InitializeComponent();
             // Use the app base directory so the editor / runtime will read/write the project's copy in the output folder.
-            _gamesPath = "D:\\__Dev\\__C#\\GamesLauncher\\games.json";
+            
         }
 
         private async void Ok_Click(object sender, RoutedEventArgs e)

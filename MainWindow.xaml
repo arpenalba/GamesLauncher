@@ -88,11 +88,8 @@
                 <!-- Game list fills remaining space -->
                 <ListBox x:Name="GamesList"
                          ItemsSource="{Binding Games}"
-                         AllowDrop="True"
                          HorizontalContentAlignment="Stretch"
                          BorderThickness="0"
-                         DragOver="GamesList_DragOver"
-                         Drop="GamesList_Drop"
                          MouseDoubleClick="GamesList_MouseDoubleClick"
                          Background="Transparent"
                          Padding="8">
@@ -123,16 +120,13 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <!-- Hang box / handle -->
+                                    <!-- Visual handle (no drag behavior) -->
                                     <Border Grid.Column="0"
                                             Width="18" Height="18"
                                             Background="#2C2C2C"
                                             CornerRadius="4"
                                             HorizontalAlignment="Center"
-                                            VerticalAlignment="Center"
-                                            Cursor="SizeNS"
-                                            PreviewMouseLeftButtonDown="Handle_PreviewMouseLeftButtonDown"
-                                            MouseMove="Handle_MouseMove" />
+                                            VerticalAlignment="Center" />
 
                                     <!-- Content -->
                                     <StackPanel Grid.Column="1" Margin="8,0,0,0">
